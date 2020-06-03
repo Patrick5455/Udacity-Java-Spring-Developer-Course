@@ -12,11 +12,16 @@ import java.io.IOException;
 @WebServlet(name = "helloServlet", urlPatterns = "/helloServlet")
 
 /* Servlet is a technology/API/class that is used to create handle requests in web
-* applications. Reside in server side, Sprin Boot uses Servlet to receive requests from client side
-* There are ways in Spring Boot to ise Servlet Api:
+* applications. Reside in server side, Spring Boot uses Servlet to receive requests from client side
+* There are 2 ways in Spring Boot to use Servlet Api:
 *
-* @ServletComponentScan
+* @ServletComponentScan &
 * @Bean
+*
+* There are 3 compoenents of servlets in springboot:
+*   1. HttpServlet
+*   2. Filter
+*   3. ServletContextListener a.k.a Listener
 */
 public class HelloServlet extends HttpServlet {
 
