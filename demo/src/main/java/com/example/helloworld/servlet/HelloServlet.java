@@ -29,25 +29,7 @@ public class HelloServlet extends HttpServlet {
     protected void doGet(HttpServletRequest request, HttpServletResponse response){
 
         System.out.println("Running Hello Servlet doGet method");
-
-    }
-
-
-@WebFilter(filterName = "helloFilter", urlPatterns = "/helloServlet")
-public class HelloFilter implements Filter {
-
-    @Override
-    public void doFilter(ServletRequest servletRequest,
-                         ServletResponse servletResponse,
-                         FilterChain filterChain)
-
-            throws IOException, ServletException {
-        System.out.println("Executing doFilter method");
-        filterChain.doFilter(servletRequest, servletResponse);
-        System.out.println("DOne Executing doFilter method");
-
-    }
-
     }
 }
+
 
