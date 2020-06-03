@@ -20,5 +20,4 @@ public class HelloController {
         result.put("city", "San Jose");
         return result;
     }
-
 }
