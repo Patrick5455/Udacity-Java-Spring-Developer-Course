@@ -13,13 +13,11 @@ import java.util.Map;
 public class UploadController {
 
     Map<String, Object> result = new HashMap<>();
-
     /// Receive message
-    @RequestMapping(value = "/uploadFile")
+    @RequestMapping("/uploadFile")
     public Map<String, Object> upload(@RequestParam("attach")MultipartFile file) throws IOException {
-
         // File info
-        System.out.println("File name = " + file.getOriginalFilename());
+        System.out.println("File name = "  + file.getOriginalFilename());
         System.out.println("File type = " + file.getContentType());
 
         // Save to disk
