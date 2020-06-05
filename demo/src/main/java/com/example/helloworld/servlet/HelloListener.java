@@ -8,15 +8,13 @@ import javax.servlet.annotation.WebListener;
 public class HelloListener implements ServletContextListener {
 
     @Override
-    public void contextDestroyed (ServletContextEvent servletContextEvent){
-        System.out.println("Servlet Context Destroyed");
-    }
-
-    @Override
     public void contextInitialized (ServletContextEvent servletContextEvent){
         System.out.println("Servlet Context Initializer");
     }
 
-
+    @Override
+    public void contextDestroyed (ServletContextEvent servletContextEvent){
+        System.out.println("Servlet Context Destroyed");
+    }
 
 }
