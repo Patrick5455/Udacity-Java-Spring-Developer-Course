@@ -4,6 +4,7 @@ import com.example.freemarker.model.Student;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -21,7 +22,7 @@ public class StudentList {
         studentList.add(new Student(3, "Boluwatife", 97));
         studentList.add(new Student(4, "Florence", 99));
 
-        return "list";
+        return "list.html";
     }
 
 }
