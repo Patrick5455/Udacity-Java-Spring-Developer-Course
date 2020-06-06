@@ -4,11 +4,12 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
 
 import java.util.HashMap;
 import java.util.Map;
 
-@Controller
+@RestController
 public class LoggingController {
 
     Logger logger = LoggerFactory.getLogger(LoggingController.class);
@@ -22,6 +23,7 @@ public class LoggingController {
         logger.warn("This is a warning message");
         logger.info("This is logger logging info");
         logger.debug("This is logger logging debug message");
+
         return map;
     }
 
