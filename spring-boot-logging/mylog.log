@@ -1372,3 +1372,11 @@ Unconditional classes:
 2020-06-06 18:47:03.595 DEBUG 26214 --- [RMI TCP Connection(4)-192.168.43.183] sun.rmi.transport.tcp                    : RMI TCP Connection(4)-192.168.43.183: close connection
 2020-06-06 18:47:35.464 DEBUG 26214 --- [Catalina-utility-2] org.apache.catalina.session.ManagerBase  : Start expire sessions StandardManager at 1591465655461 sessioncount 0
 2020-06-06 18:47:35.465 DEBUG 26214 --- [Catalina-utility-2] org.apache.catalina.session.ManagerBase  : End expire sessions StandardManager processingTime 4 expired sessions: 0
+2020-06-06 18:48:24.741 DEBUG 26214 --- [SpringContextShutdownHook] ConfigServletWebServerApplicationContext : Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@19932c16, started on Sat Jun 06 18:46:33 WAT 2020
+2020-06-06 18:48:24.742 DEBUG 26214 --- [SpringContextShutdownHook] o.s.c.e.PropertySourcesPropertyResolver  : Found key 'spring.liveBeansView.mbeanDomain' in PropertySource 'systemProperties' with value of type String
+2020-06-06 18:48:24.744 DEBUG 26214 --- [SpringContextShutdownHook] o.s.c.support.DefaultLifecycleProcessor  : Stopping beans in phase 2147483647
+2020-06-06 18:48:24.746 DEBUG 26214 --- [SpringContextShutdownHook] o.s.c.support.DefaultLifecycleProcessor  : Bean 'webServerGracefulShutdown' completed its stop procedure
+2020-06-06 18:48:24.746 DEBUG 26214 --- [SpringContextShutdownHook] o.s.c.support.DefaultLifecycleProcessor  : Stopping beans in phase 2147483646
+2020-06-06 18:48:24.783 DEBUG 26214 --- [SpringContextShutdownHook] o.s.c.support.DefaultLifecycleProcessor  : Bean 'webServerStartStop' completed its stop procedure
+2020-06-06 18:48:24.784 DEBUG 26214 --- [SpringContextShutdownHook] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2020-06-06 18:48:24.785  INFO 26214 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
