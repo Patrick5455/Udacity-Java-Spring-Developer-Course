@@ -5,6 +5,8 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -49,6 +51,18 @@ public class UserController {
 
         model.addAttribute("list", list);
         return "demo2";
+    }
 
+    // implementing scope in Thymeleaf
+    @RequestMapping("demo3")
+    public String demo3 (HttpServletRequest request, Model model){
+        // Request Scope
+        request.setAttribute("request", "request data");
+        //Session Scope
+        request.getSession().setAttribute("session", "session data");
+        //Application Scope
+        request.getSession().getServletContext().setAttribute("application", "application data");
+
+        return "demo3";
     }
 }
