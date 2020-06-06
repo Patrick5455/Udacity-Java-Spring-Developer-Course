@@ -7165,3 +7165,24 @@ Cache-Control: max-age=0
 2020-06-06 18:49:13.548 DEBUG 26708 --- [RMI TCP Connection(4)-192.168.43.183] sun.rmi.transport.tcp                    : RMI TCP Connection(4)-192.168.43.183: close connection
 2020-06-06 18:49:30.988 DEBUG 26708 --- [Catalina-utility-1] org.apache.catalina.session.ManagerBase  : Start expire sessions StandardManager at 1591465770987 sessioncount 0
 2020-06-06 18:49:30.989 DEBUG 26708 --- [Catalina-utility-1] org.apache.catalina.session.ManagerBase  : End expire sessions StandardManager processingTime 1 expired sessions: 0
+2020-06-06 18:50:12.880 DEBUG 26708 --- [http-nio-8080-exec-3] o.a.tomcat.util.net.SocketWrapperBase    : Socket: [org.apache.tomcat.util.net.NioEndpoint$NioSocketWrapper@3ff2f1c7:org.apache.tomcat.util.net.NioChannel@24da3e47:java.nio.channels.SocketChannel[connected local=/127.0.0.1:8080 remote=/127.0.0.1:57210]], Read from buffer: [0]
+2020-06-06 18:50:12.885 DEBUG 26708 --- [http-nio-8080-exec-3] o.apache.coyote.http11.Http11Processor   : Error parsing HTTP request header
+
+java.io.EOFException: null
+	at org.apache.tomcat.util.net.NioEndpoint$NioSocketWrapper.fillReadBuffer(NioEndpoint.java:1231) ~[tomcat-embed-core-9.0.35.jar:9.0.35]
+	at org.apache.tomcat.util.net.NioEndpoint$NioSocketWrapper.read(NioEndpoint.java:1141) ~[tomcat-embed-core-9.0.35.jar:9.0.35]
+	at org.apache.coyote.http11.Http11InputBuffer.fill(Http11InputBuffer.java:780) ~[tomcat-embed-core-9.0.35.jar:9.0.35]
+	at org.apache.coyote.http11.Http11InputBuffer.parseRequestLine(Http11InputBuffer.java:356) ~[tomcat-embed-core-9.0.35.jar:9.0.35]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:260) ~[tomcat-embed-core-9.0.35.jar:9.0.35]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) ~[tomcat-embed-core-9.0.35.jar:9.0.35]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868) ~[tomcat-embed-core-9.0.35.jar:9.0.35]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1590) ~[tomcat-embed-core-9.0.35.jar:9.0.35]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) ~[tomcat-embed-core-9.0.35.jar:9.0.35]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) ~[na:na]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-9.0.35.jar:9.0.35]
+	at java.base/java.lang.Thread.run(Thread.java:834) ~[na:na]
+
+2020-06-06 18:50:12.885 DEBUG 26708 --- [http-nio-8080-exec-3] o.apache.coyote.http11.Http11Processor   : Socket: [org.apache.tomcat.util.net.NioEndpoint$NioSocketWrapper@3ff2f1c7:org.apache.tomcat.util.net.NioChannel@24da3e47:java.nio.channels.SocketChannel[connected local=/127.0.0.1:8080 remote=/127.0.0.1:57210]], Status in: [OPEN_READ], State out: [CLOSED]
+2020-06-06 18:50:12.886 DEBUG 26708 --- [http-nio-8080-exec-3] o.apache.tomcat.util.threads.LimitLatch  : Counting down[http-nio-8080-exec-3] latch=1
+2020-06-06 18:50:12.886 DEBUG 26708 --- [http-nio-8080-exec-3] org.apache.tomcat.util.net.NioEndpoint   : Calling [org.apache.tomcat.util.net.NioEndpoint@1e127c1e].closeSocket([org.apache.tomcat.util.net.NioEndpoint$NioSocketWrapper@3ff2f1c7:org.apache.tomcat.util.net.NioChannel@24da3e47:java.nio.channels.SocketChannel[connected local=/127.0.0.1:8080 remote=/127.0.0.1:57210]])
