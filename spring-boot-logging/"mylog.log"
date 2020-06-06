@@ -7190,3 +7190,70 @@ java.io.EOFException: null
 2020-06-06 18:50:30.993 DEBUG 26708 --- [Catalina-utility-2] org.apache.catalina.session.ManagerBase  : End expire sessions StandardManager processingTime 1 expired sessions: 0
 2020-06-06 18:51:30.996 DEBUG 26708 --- [Catalina-utility-2] org.apache.catalina.session.ManagerBase  : Start expire sessions StandardManager at 1591465890996 sessioncount 0
 2020-06-06 18:51:30.997 DEBUG 26708 --- [Catalina-utility-2] org.apache.catalina.session.ManagerBase  : End expire sessions StandardManager processingTime 1 expired sessions: 0
+2020-06-06 18:52:31.000 DEBUG 26708 --- [Catalina-utility-1] org.apache.catalina.session.ManagerBase  : Start expire sessions StandardManager at 1591465951000 sessioncount 0
+2020-06-06 18:52:31.000 DEBUG 26708 --- [Catalina-utility-1] org.apache.catalina.session.ManagerBase  : End expire sessions StandardManager processingTime 0 expired sessions: 0
+2020-06-06 18:53:31.003 DEBUG 26708 --- [Catalina-utility-2] org.apache.catalina.session.ManagerBase  : Start expire sessions StandardManager at 1591466011003 sessioncount 0
+2020-06-06 18:53:31.004 DEBUG 26708 --- [Catalina-utility-2] org.apache.catalina.session.ManagerBase  : End expire sessions StandardManager processingTime 1 expired sessions: 0
+2020-06-06 18:54:31.006 DEBUG 26708 --- [Catalina-utility-2] org.apache.catalina.session.ManagerBase  : Start expire sessions StandardManager at 1591466071006 sessioncount 0
+2020-06-06 18:54:31.006 DEBUG 26708 --- [Catalina-utility-2] org.apache.catalina.session.ManagerBase  : End expire sessions StandardManager processingTime 0 expired sessions: 0
+2020-06-06 18:55:31.649 DEBUG 26708 --- [Catalina-utility-1] org.apache.catalina.session.ManagerBase  : Start expire sessions StandardManager at 1591466131649 sessioncount 0
+2020-06-06 18:55:31.650 DEBUG 26708 --- [Catalina-utility-1] org.apache.catalina.session.ManagerBase  : End expire sessions StandardManager processingTime 1 expired sessions: 0
+2020-06-06 18:56:31.653 DEBUG 26708 --- [Catalina-utility-2] org.apache.catalina.session.ManagerBase  : Start expire sessions StandardManager at 1591466191653 sessioncount 0
+2020-06-06 18:56:31.653 DEBUG 26708 --- [Catalina-utility-2] org.apache.catalina.session.ManagerBase  : End expire sessions StandardManager processingTime 0 expired sessions: 0
+2020-06-06 18:57:31.656 DEBUG 26708 --- [Catalina-utility-2] org.apache.catalina.session.ManagerBase  : Start expire sessions StandardManager at 1591466251656 sessioncount 0
+2020-06-06 18:57:31.656 DEBUG 26708 --- [Catalina-utility-2] org.apache.catalina.session.ManagerBase  : End expire sessions StandardManager processingTime 0 expired sessions: 0
+2020-06-06 18:58:31.659 DEBUG 26708 --- [Catalina-utility-2] org.apache.catalina.session.ManagerBase  : Start expire sessions StandardManager at 1591466311659 sessioncount 0
+2020-06-06 18:58:31.659 DEBUG 26708 --- [Catalina-utility-2] org.apache.catalina.session.ManagerBase  : End expire sessions StandardManager processingTime 0 expired sessions: 0
+2020-06-06 18:59:31.662 DEBUG 26708 --- [Catalina-utility-2] org.apache.catalina.session.ManagerBase  : Start expire sessions StandardManager at 1591466371662 sessioncount 0
+2020-06-06 18:59:31.662 DEBUG 26708 --- [Catalina-utility-2] org.apache.catalina.session.ManagerBase  : End expire sessions StandardManager processingTime 0 expired sessions: 0
+2020-06-06 19:00:31.665 DEBUG 26708 --- [Catalina-utility-2] org.apache.catalina.session.ManagerBase  : Start expire sessions StandardManager at 1591466431664 sessioncount 0
+2020-06-06 19:00:31.665 DEBUG 26708 --- [Catalina-utility-2] org.apache.catalina.session.ManagerBase  : End expire sessions StandardManager processingTime 1 expired sessions: 0
+2020-06-06 19:01:31.667 DEBUG 26708 --- [Catalina-utility-2] org.apache.catalina.session.ManagerBase  : Start expire sessions StandardManager at 1591466491667 sessioncount 0
+2020-06-06 19:01:31.668 DEBUG 26708 --- [Catalina-utility-2] org.apache.catalina.session.ManagerBase  : End expire sessions StandardManager processingTime 1 expired sessions: 0
+2020-06-06 19:02:31.671 DEBUG 26708 --- [Catalina-utility-2] org.apache.catalina.session.ManagerBase  : Start expire sessions StandardManager at 1591466551670 sessioncount 0
+2020-06-06 19:02:31.674 DEBUG 26708 --- [Catalina-utility-2] org.apache.catalina.session.ManagerBase  : End expire sessions StandardManager processingTime 3 expired sessions: 0
+2020-06-06 19:03:29.179 DEBUG 26708 --- [RMI Scheduler(0)] sun.rmi.dgc                              : RMI Scheduler(0): 4cabf5e1d4003622:-3401f831:17289eb5dd2:-7ffe
+2020-06-06 19:03:31.677 DEBUG 26708 --- [Catalina-utility-1] org.apache.catalina.session.ManagerBase  : Start expire sessions StandardManager at 1591466611677 sessioncount 0
+2020-06-06 19:03:31.677 DEBUG 26708 --- [Catalina-utility-1] org.apache.catalina.session.ManagerBase  : End expire sessions StandardManager processingTime 0 expired sessions: 0
+2020-06-06 19:04:31.679 DEBUG 26708 --- [Catalina-utility-2] org.apache.catalina.session.ManagerBase  : Start expire sessions StandardManager at 1591466671679 sessioncount 0
+2020-06-06 19:04:31.680 DEBUG 26708 --- [Catalina-utility-2] org.apache.catalina.session.ManagerBase  : End expire sessions StandardManager processingTime 1 expired sessions: 0
+2020-06-06 19:05:31.682 DEBUG 26708 --- [Catalina-utility-2] org.apache.catalina.session.ManagerBase  : Start expire sessions StandardManager at 1591466731682 sessioncount 0
+2020-06-06 19:05:31.683 DEBUG 26708 --- [Catalina-utility-2] org.apache.catalina.session.ManagerBase  : End expire sessions StandardManager processingTime 1 expired sessions: 0
+2020-06-06 19:06:31.685 DEBUG 26708 --- [Catalina-utility-1] org.apache.catalina.session.ManagerBase  : Start expire sessions StandardManager at 1591466791685 sessioncount 0
+2020-06-06 19:06:31.686 DEBUG 26708 --- [Catalina-utility-1] org.apache.catalina.session.ManagerBase  : End expire sessions StandardManager processingTime 1 expired sessions: 0
+2020-06-06 19:07:31.688 DEBUG 26708 --- [Catalina-utility-2] org.apache.catalina.session.ManagerBase  : Start expire sessions StandardManager at 1591466851688 sessioncount 0
+2020-06-06 19:07:31.688 DEBUG 26708 --- [Catalina-utility-2] org.apache.catalina.session.ManagerBase  : End expire sessions StandardManager processingTime 0 expired sessions: 0
+2020-06-06 19:08:31.690 DEBUG 26708 --- [Catalina-utility-2] org.apache.catalina.session.ManagerBase  : Start expire sessions StandardManager at 1591466911690 sessioncount 0
+2020-06-06 19:08:31.691 DEBUG 26708 --- [Catalina-utility-2] org.apache.catalina.session.ManagerBase  : End expire sessions StandardManager processingTime 1 expired sessions: 0
+2020-06-06 19:09:31.693 DEBUG 26708 --- [Catalina-utility-1] org.apache.catalina.session.ManagerBase  : Start expire sessions StandardManager at 1591466971693 sessioncount 0
+2020-06-06 19:09:31.693 DEBUG 26708 --- [Catalina-utility-1] org.apache.catalina.session.ManagerBase  : End expire sessions StandardManager processingTime 0 expired sessions: 0
+2020-06-06 19:10:31.696 DEBUG 26708 --- [Catalina-utility-1] org.apache.catalina.session.ManagerBase  : Start expire sessions StandardManager at 1591467031696 sessioncount 0
+2020-06-06 19:10:31.696 DEBUG 26708 --- [Catalina-utility-1] org.apache.catalina.session.ManagerBase  : End expire sessions StandardManager processingTime 0 expired sessions: 0
+2020-06-06 19:11:31.698 DEBUG 26708 --- [Catalina-utility-2] org.apache.catalina.session.ManagerBase  : Start expire sessions StandardManager at 1591467091698 sessioncount 0
+2020-06-06 19:11:31.699 DEBUG 26708 --- [Catalina-utility-2] org.apache.catalina.session.ManagerBase  : End expire sessions StandardManager processingTime 1 expired sessions: 0
+2020-06-06 19:12:31.701 DEBUG 26708 --- [Catalina-utility-2] org.apache.catalina.session.ManagerBase  : Start expire sessions StandardManager at 1591467151701 sessioncount 0
+2020-06-06 19:12:31.701 DEBUG 26708 --- [Catalina-utility-2] org.apache.catalina.session.ManagerBase  : End expire sessions StandardManager processingTime 0 expired sessions: 0
+2020-06-06 19:13:31.704 DEBUG 26708 --- [Catalina-utility-2] org.apache.catalina.session.ManagerBase  : Start expire sessions StandardManager at 1591467211703 sessioncount 0
+2020-06-06 19:13:31.704 DEBUG 26708 --- [Catalina-utility-2] org.apache.catalina.session.ManagerBase  : End expire sessions StandardManager processingTime 1 expired sessions: 0
+2020-06-06 19:14:31.706 DEBUG 26708 --- [Catalina-utility-2] org.apache.catalina.session.ManagerBase  : Start expire sessions StandardManager at 1591467271706 sessioncount 0
+2020-06-06 19:14:31.706 DEBUG 26708 --- [Catalina-utility-2] org.apache.catalina.session.ManagerBase  : End expire sessions StandardManager processingTime 0 expired sessions: 0
+2020-06-06 19:15:31.708 DEBUG 26708 --- [Catalina-utility-2] org.apache.catalina.session.ManagerBase  : Start expire sessions StandardManager at 1591467331708 sessioncount 0
+2020-06-06 19:15:31.709 DEBUG 26708 --- [Catalina-utility-2] org.apache.catalina.session.ManagerBase  : End expire sessions StandardManager processingTime 1 expired sessions: 0
+2020-06-06 19:16:31.711 DEBUG 26708 --- [Catalina-utility-2] org.apache.catalina.session.ManagerBase  : Start expire sessions StandardManager at 1591467391711 sessioncount 0
+2020-06-06 19:16:31.712 DEBUG 26708 --- [Catalina-utility-2] org.apache.catalina.session.ManagerBase  : End expire sessions StandardManager processingTime 1 expired sessions: 0
+2020-06-06 19:17:31.715 DEBUG 26708 --- [Catalina-utility-1] org.apache.catalina.session.ManagerBase  : Start expire sessions StandardManager at 1591467451714 sessioncount 0
+2020-06-06 19:17:31.715 DEBUG 26708 --- [Catalina-utility-1] org.apache.catalina.session.ManagerBase  : End expire sessions StandardManager processingTime 1 expired sessions: 0
+2020-06-06 19:18:31.717 DEBUG 26708 --- [Catalina-utility-1] org.apache.catalina.session.ManagerBase  : Start expire sessions StandardManager at 1591467511717 sessioncount 0
+2020-06-06 19:18:31.718 DEBUG 26708 --- [Catalina-utility-1] org.apache.catalina.session.ManagerBase  : End expire sessions StandardManager processingTime 1 expired sessions: 0
+2020-06-06 19:19:31.720 DEBUG 26708 --- [Catalina-utility-1] org.apache.catalina.session.ManagerBase  : Start expire sessions StandardManager at 1591467571720 sessioncount 0
+2020-06-06 19:19:31.720 DEBUG 26708 --- [Catalina-utility-1] org.apache.catalina.session.ManagerBase  : End expire sessions StandardManager processingTime 0 expired sessions: 0
+2020-06-06 19:20:31.722 DEBUG 26708 --- [Catalina-utility-2] org.apache.catalina.session.ManagerBase  : Start expire sessions StandardManager at 1591467631722 sessioncount 0
+2020-06-06 19:20:31.722 DEBUG 26708 --- [Catalina-utility-2] org.apache.catalina.session.ManagerBase  : End expire sessions StandardManager processingTime 0 expired sessions: 0
+2020-06-06 19:20:38.203 DEBUG 26708 --- [SpringContextShutdownHook] ConfigServletWebServerApplicationContext : Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@183ec003, started on Sat Jun 06 18:48:29 WAT 2020
+2020-06-06 19:20:38.203 DEBUG 26708 --- [SpringContextShutdownHook] o.s.c.e.PropertySourcesPropertyResolver  : Found key 'spring.liveBeansView.mbeanDomain' in PropertySource 'systemProperties' with value of type String
+2020-06-06 19:20:38.205 DEBUG 26708 --- [SpringContextShutdownHook] o.s.c.support.DefaultLifecycleProcessor  : Stopping beans in phase 2147483647
+2020-06-06 19:20:38.206 DEBUG 26708 --- [SpringContextShutdownHook] o.s.c.support.DefaultLifecycleProcessor  : Bean 'webServerGracefulShutdown' completed its stop procedure
+2020-06-06 19:20:38.206 DEBUG 26708 --- [SpringContextShutdownHook] o.s.c.support.DefaultLifecycleProcessor  : Stopping beans in phase 2147483646
+2020-06-06 19:20:38.225 DEBUG 26708 --- [SpringContextShutdownHook] o.s.c.support.DefaultLifecycleProcessor  : Bean 'webServerStartStop' completed its stop procedure
+2020-06-06 19:20:38.226 DEBUG 26708 --- [SpringContextShutdownHook] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2020-06-06 19:20:38.227  INFO 26708 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
