@@ -1,5 +1,7 @@
 package com.example.springbootthymetestswaplog.model;
 
+import org.springframework.stereotype.Component;
+
 public class User {
 
     public Integer id;

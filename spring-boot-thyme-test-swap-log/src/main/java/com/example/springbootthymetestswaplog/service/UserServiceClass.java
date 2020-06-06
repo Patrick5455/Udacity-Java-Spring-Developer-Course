@@ -1,19 +1,20 @@
 package com.example.springbootthymetestswaplog.service;
 
 import com.example.springbootthymetestswaplog.dao.UserDao;
+import com.example.springbootthymetestswaplog.model.User;
 import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;
 
 @Service
-public class UserService {
+public class UserServiceClass {
 
-    UserDao userDao;
 
     @Resource
-    public Integer getAge(){
+    private UserDao userDao;
 
-        return userDao.getAge();
+    public String getName(){
+
+       return userDao.getName();
     }
-
 }

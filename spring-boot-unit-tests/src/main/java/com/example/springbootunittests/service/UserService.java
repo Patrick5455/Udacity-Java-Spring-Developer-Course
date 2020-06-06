@@ -1,4 +1,4 @@
-package com.example.springbootunittests.dao.service;
+package com.example.springbootunittests.service;
 
 import com.example.springbootunittests.dao.UserDao;
 import org.springframework.stereotype.Service;

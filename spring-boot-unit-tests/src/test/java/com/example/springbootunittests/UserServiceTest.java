@@ -1,6 +1,6 @@
 package com.example.springbootunittests;
 
-import com.example.springbootunittests.dao.service.UserService;
+import com.example.springbootunittests.service.UserService;
 import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;
