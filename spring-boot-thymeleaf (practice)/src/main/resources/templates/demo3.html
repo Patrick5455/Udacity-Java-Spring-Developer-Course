@@ -23,5 +23,9 @@
     <span th:case="D">D Student</span>
 </div>
 
+<div th:if="${ grade < 60}">
+    <p>Your Grade: <span th:text="${grade}"></span></p>
+    <p>You Failed!</p>
+</div>
 </body>
 </html>

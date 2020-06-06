@@ -5,6 +5,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 
+import javax.servlet.http.HttpServletRequest;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -36,7 +37,7 @@ public class UserController {
     @RequestMapping("demo3")
     public String demo3 (Model model){
 
-        double grade = 60.0;
+        double grade = 40.0;
         model.addAttribute("grade", grade);
         model.addAttribute("GPA", convertCGPA(grade));
 
@@ -54,6 +55,25 @@ public class UserController {
              return "D";
          else
              return "F";
+    }
+
+    @RequestMapping("demo4")
+    public String demo4 (HttpServletRequest request, Model model){
+
+        // Request Scope
+        request.setAttribute("request", "Request Data");
+
+        // Session Scope
+        request.getSession().setAttribute("session", "Session Data");
+
+        // Application Scope
+        request.getSession().getServletContext().setAttribute(
+                "application", "Application Data"
+        );
+
+        model.addAttribute("request", request);
+        return "demo4";
+
     }
 }
 
