@@ -11,6 +11,7 @@ public class UserController {
     public String demo(Model model){
 
         model.addAttribute("message", "Hello Thymeleaf");
+        model.addAttribute("message2", "Thymeleaf is easier to use");
 
         return "demo";
     }

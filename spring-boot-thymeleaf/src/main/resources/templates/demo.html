@@ -8,7 +8,12 @@
 
 <h3>Hello World Thymeleaf Project</h3>
 
-<span th:text="${message}"></span>
+// variable output syntax in thymeLeaf
+// to use variable output, you add an object to model in controller
+// then you specify the name of the model object here in thymeleaf th:text="${}"
+
+<span th:text="${message}"></span> <br/>
+<span th:text="${message2}"></span>
 
 </body>
 </html>
