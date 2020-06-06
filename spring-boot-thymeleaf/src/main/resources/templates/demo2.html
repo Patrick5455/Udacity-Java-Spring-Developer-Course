@@ -7,6 +7,7 @@
 <body>
 
 <table>
+    <h3> User Table</h3>
     <tr>
         <th>User Id</th>
         <th>User Name</th>
@@ -19,5 +20,13 @@
         <td th:text="${user.age}"></td>
     </tr>
 </table>
+
+<h3>Thymeleaf URLs</h3>
+<!-- redirect to demo page without parameter-->
+<a th:href="@{~/demo}">Visit Demo Page</a> <br/>
+<!-- redirect to demo page with parameter-->
+<a th:href="@{~/demo(id=1, name=eric)}">Visit Demo Page With Parameter</a>
+
+
 </body>
 </html>
