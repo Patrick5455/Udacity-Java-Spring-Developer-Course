@@ -1,8 +1,12 @@
 package com.example.springbootthymeleaf.controller;
 
+import com.example.springbootthymeleaf.model.User;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
+
+import java.util.ArrayList;
+import java.util.List;
 
 @Controller
 public class UserController {
@@ -32,5 +36,19 @@ public class UserController {
             return "D";
         else
             return "F";
+    }
+
+    @RequestMapping("/demo2")
+    public String demo2 (Model model){
+
+        List<User> list = new ArrayList<>();
+
+        list.add(new User(1, "Patrick", 23));
+        list.add(new User(2, "Mayowa", 21));
+        list.add(new User(3, "Boluwatife", 18));
+
+        model.addAttribute("list", list);
+        return "demo2";
+
     }
 }
