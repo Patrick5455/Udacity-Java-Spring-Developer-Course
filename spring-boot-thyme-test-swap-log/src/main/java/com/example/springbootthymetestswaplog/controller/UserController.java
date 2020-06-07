@@ -24,12 +24,12 @@ public class UserController {
     @RequestMapping("page2")
     public String page2 (Model model){
 
-        List<User> map = new ArrayList<>();
+        List<User> users = new ArrayList<>();
 
-        map.add(new User(1, "Chinedu John", 30));
-        map.add(new User(2, "Erons Uj", 35));
-        map.add(new User(3, "Bams Issac", 40));
-        model.addAttribute("users", map);
+        users.add(new User(1, "Chinedu John", 30));
+        users.add(new User(2, "Erons Uj", 35));
+        users.add(new User(3, "Bams Issac", 40));
+        model.addAttribute("users", users);
 
         return "page2";
     }
@@ -37,7 +37,7 @@ public class UserController {
     @RequestMapping("page3")
     public String page3(Model model){
 
-        Integer grade = 60;
+        Integer grade = 40;
 
         model.addAttribute("grade",grade);
 
@@ -67,11 +67,12 @@ public class UserController {
         request.setAttribute("request", "Request Data");
 
         //Session Scope
-        request.getSession().setAttribute("sessiom", "Session Data");
+        request.getSession().setAttribute("session", "Session Data");
 
         //Application Scope
         request.getSession().getServletContext().setAttribute("application", "Application Data");
 
+//        model.addAttribute("request", request);
         return "page4";
     }
 
