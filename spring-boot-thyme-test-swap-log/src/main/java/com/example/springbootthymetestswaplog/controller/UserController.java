@@ -1,13 +1,14 @@
 package com.example.springbootthymetestswaplog.controller;
 
 import com.example.springbootthymetestswaplog.model.User;
-import com.sun.org.apache.xpath.internal.operations.Mod;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 import javax.servlet.http.HttpServletRequest;
+import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 @Controller
@@ -15,7 +16,6 @@ public class UserController {
 
     @RequestMapping("page1")
     public String page1 (Model model){
-
         model.addAttribute("page1", "Welcome Home");
         return "page1";
     }
@@ -24,11 +24,11 @@ public class UserController {
     @RequestMapping("page2")
     public String page2 (Model model){
 
-        Map<String, User> map = new HashMap<>();
+        List<User> map = new ArrayList<>();
 
-        map.put("user 1", new User(1, "Chinedu John", 30));
-        map.put("user 2", new User(2, "Erons Uj", 35));
-        map.put("user 3", new User(3, "Bams Issac", 40));
+        map.add(new User(1, "Chinedu John", 30));
+        map.add(new User(2, "Erons Uj", 35));
+        map.add(new User(3, "Bams Issac", 40));
         model.addAttribute("users", map);
 
         return "page2";
