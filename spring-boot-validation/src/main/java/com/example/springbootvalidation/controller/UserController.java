@@ -1,12 +1,13 @@
-package com.example.springbootvalidation.model.controller;
+package com.example.springbootvalidation.controller;
 
+import org.springframework.stereotype.Controller;
 import org.springframework.stereotype.Repository;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 import javax.validation.Valid;
 
-@Repository
+@Controller
 public class User {
 
 
