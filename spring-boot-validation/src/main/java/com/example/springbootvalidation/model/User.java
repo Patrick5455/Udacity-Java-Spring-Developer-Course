@@ -8,9 +8,9 @@ public class User {
     private String name;
     @NotBlank(message = "password cannot blank")
     private String password;
-    private double grade;
+    private Double grade;
 
-    public User(String name, String password, double grade){
+    public User(String name, String password, Double grade){
         this.name = name;
         this.password = password;
         this.grade = grade;
@@ -24,19 +24,18 @@ public class User {
         this.password = password;
     }
 
-    public void setGrade(double grade){
+    public void setGrade(Double grade){
         this.grade = grade;
     }
 
     public String getName(){
         return name;
     }
-
     public String getPassword(){
         return password;
     }
 
-    public double getGrade(){
+    public Double getGrade(){
         return grade;
     }
 }
