@@ -1,13 +1,16 @@
 package com.example.springbootvalidation.model;
+import org.hibernate.validator.constraints.*;
 
 import javax.validation.constraints.NotBlank;
 
 public class User {
 
-    @NotBlank(message = "username cannot blank")
+
+    @NotBlank(message = "name cannot be blank")
     private String name;
-    @NotBlank(message = "password cannot blank")
+    @NotBlank(message = " password cannot be blank")
     private String password;
+
     private Double grade;
 
     public User(String name, String password, Double grade){
