@@ -12,9 +12,9 @@ public class User {
     @NotBlank(message = "Username cannot be blank")
     private String userName;
 
-    @NotBlank(message = "Password cannot be blank")
-    @Length(min = 6, max = 10, message = "Password length must be between 6 and 10 characters")
-    private String passWord;
+   // @NotBlank()
+    @Length(min = 6, max = 10, message = "password length must be between 6 and 10 characters")
+    private String password;
 
     @Min(value = 0, message = "Grade cannot be leas than 0")
     @Max(value = 100, message = "Grade cannot be greater than 100")
@@ -32,12 +32,12 @@ public class User {
         this.userName = userName;
     }
 
-    public String getPassWord() {
-        return passWord;
+    public String getPassword() {
+        return password;
     }
 
-    public void setPassWord(String passWord) {
-        this.passWord = passWord;
+    public void setPassword(String password) {
+        this.password = password;
     }
 
     public Double getGrade() {
@@ -56,10 +56,10 @@ public class User {
         this.email = email;
     }
 
-    public User (String userName, String passWord, Double grade, String email){
+    public User (String userName, String password, Double grade, String email){
 
         this.userName = userName;
-        this.passWord = passWord;
+        this.password = password;
         this.grade = grade;
         this.email = email;
     }

@@ -9,16 +9,19 @@
 <h3>User Registration</h3>
 
 <form action="/addUser" method="post">
-    <span th:errors="${user.userName}" style="color: red"></span>
+    <span th:errors="${user.userName}" style="color: red"></span><br/>
     Username: <input type="text" name="userName">
     <br/>
-    <span th:errors="${user.password}" style="color: red"></span>
+    <span th:errors="${user.password}" style="color: red"></span><br/>
     Password: <input type="password" name="password">
     <br/>
-    <span th:errors="${user.grade}"></span>
+    <span th:errors="${user.grade}" style="color: red"></span><br/>
     Grade: <input type="number" name="grade">
-    <span th:errors="${user.email}" style="color: red"></span>
+    <br/>
+    <span th:errors="${user.email}" style="color: red"></span><br/>
     Email: <input type="email" name="email">
+    <br/>
+    <input type="submit" value="Add User">
 </form>
 
 </body>
