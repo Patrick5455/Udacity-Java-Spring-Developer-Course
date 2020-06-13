@@ -5,6 +5,11 @@ import org.springframework.web.bind.annotation.ControllerAdvice;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.servlet.ModelAndView;
 
+// this file was renamed GlobalExceptionControllerHandler.java.bak from GlobalExceptionControllerHandler.java
+// THis was dome so we can still maintain the code
+// but avoid it handling exceptions as a Global Exception Handler as in @ControllerAdvise + @ExceptionHandling
+
+
 @ControllerAdvice
 public class GlobalExceptionControllerHandler {
 

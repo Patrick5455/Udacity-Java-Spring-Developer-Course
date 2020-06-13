@@ -5,7 +5,8 @@
     <title>Custom Error Page</title>
 </head>
 <body>
-
+<!-- this file was renamed error.html.bak from error.html-->
+<!--THis was dome so we can still maintain the code but avoid it handling exceptions as a custom error page-->
 <h3>Resolving Exceptions using custom error page</h3>
 
 <h3>This also handles Exceptions not specified with @ExceptionHandler</h3>
