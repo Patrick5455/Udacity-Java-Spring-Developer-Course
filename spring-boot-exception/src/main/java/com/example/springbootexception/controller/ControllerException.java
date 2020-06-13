@@ -8,20 +8,11 @@ import org.springframework.web.bind.annotation.RequestMapping;
 public class ControllerException {
 
 
-    @RequestMapping("/math")
-    @ExceptionHandler(value = ArithmeticException.class)
+
+    @RequestMapping("/add")
     public String handleMathErrorException (){
-
-       // try {
-
-            int x = 100 / 0;
-        //}
-
-        //catch (ArithmeticException e){
-
-          //  System.out.println(e.toString());
-       // }
-        return "mathError";
+        int num = 10/0;
+       return "add";
     }
 
 

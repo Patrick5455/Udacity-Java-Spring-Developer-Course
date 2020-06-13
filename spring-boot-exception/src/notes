@@ -1,0 +1,8 @@
+There are five types of situations we can handle Spring Boot exceptions
+rather than showing error pages like 404 or 500.
+
+1. Create Custom error page
+2. @ExceptionHandler
+3. @ControllerAdvice + @ExceptionHandler
+4. Configure SimpleMappingExceptionResolver class
+5. Custom HandlerExceptionResolver class
