@@ -37,28 +37,24 @@ public class ControllerException {
 
 
     // This would now handle all ArithmeticError exception in this controller class
-    @ExceptionHandler(value = {java.lang.ArithmeticException.class})
-    public ModelAndView handleException(Exception e){
-        ModelAndView mv = new ModelAndView();
-        mv.addObject("Error", e.toString());
-        mv.setViewName("mathError");
-        return mv;
-    }
-
-    // This would handle all nullPointer Exceptions
-    @ExceptionHandler(value = {java.lang.NullPointerException.class})
-    public ModelAndView handleNullPointers (Exception e){
-
-        ModelAndView mv = new ModelAndView();
-
-        mv.addObject("null error", e.toString());
-        mv.setViewName("nullError");
-        return mv;
-    }
-
-
-
-
+//    @ExceptionHandler(value = {java.lang.ArithmeticException.class})
+//    public ModelAndView handleException(Exception e){
+//        ModelAndView mv = new ModelAndView();
+//        mv.addObject("Error", e.toString());
+//        mv.setViewName("mathError");
+//        return mv;
+//    }
+//
+//    // This would handle all nullPointer Exceptions
+//    @ExceptionHandler(value = {java.lang.NullPointerException.class})
+//    public ModelAndView handleNullPointers (Exception e){
+//
+//        ModelAndView mv = new ModelAndView();
+//
+//        mv.addObject("null error", e.toString());
+//        mv.setViewName("nullError");
+//        return mv;
+//    }
 
 
 }
