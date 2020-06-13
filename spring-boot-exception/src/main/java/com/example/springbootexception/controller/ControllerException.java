@@ -8,6 +8,7 @@ import org.springframework.web.servlet.ModelAndView;
 @Controller
 public class ControllerException {
 
+    // 1. Using custom error page
 // using custom error page to handle this endpoint exception
     @RequestMapping("/add")
     public String handleMathErrorException (){
@@ -15,8 +16,21 @@ public class ControllerException {
        return "add";
     }
 
+    @RequestMapping("/update")
+    public String handleArithmeticError(){
 
-    @RequestMapping("/add2")
+        String xul = null;
+        System.out.println(xul);
+
+        return "update";
+    }
+
+
+
+    // 2. Using @ExceptionHandler() to handle all error pages
+
+
+    // This would now handle all ArithmeticError exception in this controller class
     @ExceptionHandler(value = {java.lang.ArithmeticException.class})
     public ModelAndView handleException(Exception e){
         ModelAndView mv = new ModelAndView();
