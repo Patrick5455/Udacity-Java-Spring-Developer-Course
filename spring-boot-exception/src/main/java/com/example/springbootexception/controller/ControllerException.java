@@ -31,6 +31,9 @@ public class ControllerException {
 
 
     // 2. Using @ExceptionHandler() to handle all error pages
+        //> The limitation of using @ExceptionHandler in one controller class
+        //> is that we cannot use it to handle exceptions in other controller class
+        //> except we use @Controller Advise with @ExceptionHandler
 
 
     // This would now handle all ArithmeticError exception in this controller class
