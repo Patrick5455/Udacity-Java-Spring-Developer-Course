@@ -1,12 +1,16 @@
 package com.example.springbootwebsocket.config;
 
+import org.springframework.context.annotation.Configuration;
 import org.springframework.messaging.simp.config.MessageBrokerRegistry;
+import org.springframework.web.socket.config.annotation.EnableWebSocketMessageBroker;
 import org.springframework.web.socket.config.annotation.StompEndpointRegistry;
 import org.springframework.web.socket.config.annotation.WebSocketMessageBrokerConfigurer;
 
 // we ought to use AbstractWebSocketMessageBrokerConfigurer
 // but it has been deprecated in favour of WebSocketMessageBrokerConfigurer
 
+@Configuration
+@EnableWebSocketMessageBroker
 public class WebSocketConfig implements WebSocketMessageBrokerConfigurer {
 
 
@@ -24,10 +28,14 @@ public class WebSocketConfig implements WebSocketMessageBrokerConfigurer {
 
     @Override
     public void configureMessageBroker(MessageBrokerRegistry registry) {
+        registry.enableSimpleBroker("/topic");
+        registry.setApplicationDestinationPrefixes("/app");
     }
 
     @Override
-    public void registerStompEndpoints(StompEndpointRegistry registry) {
+    public void registerStompEndpoints(StompEndpointRegistry stompEndpointRegistry) {
+
+        stompEndpointRegistry.addEndpoint("/websocket-demo").withSockJS();
 
     }
 }
