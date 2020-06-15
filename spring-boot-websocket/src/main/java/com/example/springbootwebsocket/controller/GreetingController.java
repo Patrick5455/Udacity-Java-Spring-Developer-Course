@@ -14,7 +14,7 @@ public class GreetingController {
 
     // the controller is used to send messages to different endpoints
     // messages would be mapped to the model we created
-    //we would use the @sendto annotation to send messages to endpoints
+    //we would use the @sendTo annotation to send messages to endpoints
     // all subscribers of that destination would receive the message
 
     @MessageMapping("/hello")

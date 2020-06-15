@@ -18,7 +18,7 @@ public class schedulerConfig {
     @Autowired
     SimpMessagingTemplate messagingTemplate; // this converts message and sends ti the broker
 
-    @Scheduled(fixedDelay = 5000) // this defines the time delay
+    @Scheduled(fixedDelay = 500) // this defines the time delay
     public void sendAdhocMessages(){
 
         messagingTemplate.convertAndSend("/topic/greetings",
