@@ -4,7 +4,7 @@ public class UserResponse {
 
     private String content;
 
-    public UserResponse (){}
+    public UserResponse(String s){}
 
     public void setContent(String content){
         this.content = content;
