@@ -13,9 +13,9 @@ import org.springframework.scheduling.annotation.Scheduled;
 public class schedulerConfig {
 
     @Autowired
-    SimpMessagingTemplate messagingTemplate;
+    SimpMessagingTemplate messagingTemplate; // this converts message and sends ti the broker
 
-    @Scheduled(fixedDelay = 5000)
+    @Scheduled(fixedDelay = 5000) // this defines the time delay
     public void sendAdhocMessages(){
 
         messagingTemplate.convertAndSend("/topic/user",
