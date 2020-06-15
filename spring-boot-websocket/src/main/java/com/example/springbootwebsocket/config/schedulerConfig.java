@@ -1,6 +1,9 @@
+
+
 package com.example.springbootwebsocket.config;
 
-import com.example.springbootwebsocket.model.UserResponse;
+import com.example.springbootwebsocket.model.Greeting;
+import com.example.springbootwebsocket.model.Message;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.messaging.simp.SimpMessagingTemplate;
@@ -18,8 +21,10 @@ public class schedulerConfig {
     @Scheduled(fixedDelay = 5000) // this defines the time delay
     public void sendAdhocMessages(){
 
-        messagingTemplate.convertAndSend("/topic/user",
-                new UserResponse("Scheduler"));
+        messagingTemplate.convertAndSend("/topic/greetings",
+                new Message("Scheduler"));
     }
 
 }
+
+
