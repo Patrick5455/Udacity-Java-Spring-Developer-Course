@@ -80,10 +80,20 @@
 			<artifactId>jquery</artifactId>
 			<version>3.1.1-1</version>
 		</dependency>
-
-
-
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<scope>test</scope>
+		</dependency>
 	</dependencies>
+
+<!--By default, spring boot application will be packed into jar file.
+If want to pack as war file. You need to add the following attributes in pom.xml.
+<packaging>war</packaging>
+<name>packing</name>-->
+
+	<packaging>war</packaging>
+<!--	<name>packing</name>-->
 
 	<build>
 		<plugins>
