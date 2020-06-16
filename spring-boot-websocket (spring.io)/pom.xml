@@ -92,7 +92,7 @@ If want to pack as war file. You need to add the following attributes in pom.xml
 <packaging>war</packaging>
 <name>packing</name>-->
 
-	<packaging>war</packaging>
+<!--	<packaging>war</packaging>-->
 <!--	<name>packing</name>-->
 
 	<build>
