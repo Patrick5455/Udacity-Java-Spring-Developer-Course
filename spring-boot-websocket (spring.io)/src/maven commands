@@ -1,0 +1,8 @@
+1. To run jar file after generating jar file
+java -jar the name of the generated SNAPSHOT file
+
+e.g java -jar spring-boot-websocket-0.0.1-SNAPSHOT.jar
+
+2.  mvn help:effective-pom
+
+The above command can be used to look at the default configuration of the super POM?
