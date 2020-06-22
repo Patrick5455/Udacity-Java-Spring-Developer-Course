@@ -16,6 +16,7 @@ public class DogServiceImpl implements DogService{
     public DogRepository dogRepository;
 
     public String retrieveDogBreedById(Long id){
+
         Optional<String> optionalDog = dogRepository.findBreedById(id);
         if (!optionalDog.isPresent()){
             throw new DogNotFoundException();
