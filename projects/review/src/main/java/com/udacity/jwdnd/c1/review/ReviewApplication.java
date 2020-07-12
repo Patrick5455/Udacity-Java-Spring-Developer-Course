@@ -22,13 +22,13 @@ public class ReviewApplication {
 	@Bean
 	public String upperCaseMessage(MessageService messageService){
 		System.out.println("Bean: upperCaseMessage created");
-		return  messageService.upperCase(message());
+		return  messageService.upperCase();
 	}
 
 	@Bean
 	public String lowerCaseMessage(MessageService messageService){
 		System.out.println("Bean: lowerCaseMessage created");
-		return  messageService.lowerCase(message());
+		return  messageService.lowerCase();
 	}
 
 
