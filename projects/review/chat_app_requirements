@@ -1,0 +1,47 @@
+Final Review Exercise
+
+For this final review, we'll be building on our project from last lesson to develop a rudimentary chat application, where users can submit messages along with their username, and those messages (along with the usernames of the users who sent them) will be visible to any user that navigates to the /chat URL. Additionally, users should be able to select a message "mode": either Say, Shout, or Whisper. Say should display the message as written, while Shout should display the message in all-uppercase, and Whisper should display the message in all-lowercase. In order to accomplish this, you'll have to take following steps:
+
+Disable Spring Security. Unfortunately, since we added Spring Security dependencies to our project in the first lesson, by default all of our pages are restricted to logged-in users. We'll be learning about Spring security next lesson, so for now, let's comment out the dependency in our pom.xml file. Here are the dependencies that should be commented out:
+
+<dependency>
+  <groupId>org.springframework.boot</groupId>
+  <artifactId>spring-boot-starter-security</artifactId>
+</dependency>
+<dependency>
+  <groupId>org.springframework.security</groupId>
+  <artifactId>spring-security-test</artifactId>
+  <scope>test</scope>
+</dependency>
+
+Add a chat.html template for the main application screen. This template should have two parts: First, a form that allows users to submit their username, the message text they'd like to send to the chat, and the message "mode": Say, Shout, or Whisper. Second, some way to display the list of messages that have been sent so far. Here's some starter code for the form:
+
+<form>
+   <label for="username">Username:</label>
+   <input id="username" type="text">
+   <label for="messageText">Message Text:</label>
+   <input id="messageText" type="text">
+   <label for="messageType">Message Type: </label>
+   <select id="messageType">
+       <option selected>Say</option>
+       <option>Shout</option>
+       <option>Whisper</option>
+   </select>
+   <input type="submit">
+</form>
+
+You're going to have to add Thymeleaf attributes to make this form work with the backend, and you might want to refer to the official Thymeleaf documentation on how to properly set up <select> tags in a form. For the message list, feel free to refer back to our examples this lesson for inspiration! Don't forget that you need to display both the message text and the username for each message.
+
+Add a ChatForm class to hold the chat form data. If we have a form, we need a form-backing object. Make sure its fields match the form input elements!
+
+Add a ChatMessage class to hold the displayed message information. Since we are displaying two pieces of data for each message, the message text and the sender's username, we should create a class to hold both at once.
+
+Update the MessageService class to store a List<ChatMessage> as the chat history. Since we want to keep track of many messages over time, we need a place to put them!
+
+Update the MessageService class to have an addMessage method. This method will be called by the controller to add a submitted message to the message list stored by the MessageService.
+
+Add a ChatController class to serve the chat.html template and handle new message submissions. We can't have a Spring MVC app without controllers! This controller should serve the chat.html template when a GET request comes in under the /chat URL, and it should handle POST requests at the same URL as new message submissions.
+
+[BONUS] add a list of banned words. Use that list to conditionally render messages on the page - messages that contain one or more banned words should not be displayed.
+
+[EXTRA BONUS] Add some style! Designing an attractive website is unfortunately out of scope for this class, but that doesn't mean you can't take matters into your own hands! If you feel comfortable writing your own styling code, add CSS and/or JavaScript files to make the app a little easier on the eyes. If you don't have a lot of experience with that kind of thing, but you'd like to learn, Bootstrap is a great place to start!
